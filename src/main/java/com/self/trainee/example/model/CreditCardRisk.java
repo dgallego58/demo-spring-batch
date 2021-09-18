@@ -5,6 +5,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "credit_card_risk")
 public class CreditCardRisk implements Serializable {
     private static final long serialVersionUID = 5443824651044825479L;
 

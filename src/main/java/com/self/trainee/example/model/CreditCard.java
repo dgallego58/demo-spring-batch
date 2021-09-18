@@ -4,10 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "credit_card")
 public class CreditCard implements Serializable {
 
     private static final long serialVersionUID = - 2458874341846950257L;
@@ -18,6 +20,7 @@ public class CreditCard implements Serializable {
     private LocalDate lastPay;
 
     public CreditCard() {
+        //fetcher
     }
 
     @Override
